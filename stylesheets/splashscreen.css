@@ -1,0 +1,87 @@
+.ui-autocomplete {
+	max-width: 691px;
+}
+
+#image
+{
+	position: relative;
+	width: 600px;
+	height: 210px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.banner
+{
+	float:left;
+	margin-right: 15px;
+	position: absolute;
+	top: 0;
+	width: 145px;
+	height: 210px;
+	overflow: hidden;
+}
+
+.banner:hover {
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}
+
+.dot
+{
+	margin-top: 75px;
+	float:left;
+	margin-right: 15px;
+}
+
+#image_search 
+{
+
+	margin:0 auto;
+	background: url("../images/image_search.png") 20px 20px no-repeat transparent;
+}
+
+#image_search.hover
+{
+	background: url("../images/image_search_hover.png") 20px 20px no-repeat #848D9C;
+	z-index: 999;
+}
+
+#image_suggest
+{
+	left: 210px;
+	background: url("../images/image_suggest.png") 20px 20px no-repeat transparent;
+}
+
+#image_suggest.hover
+{
+	background: url("../images/image_suggest_hover.png") 20px 20px no-repeat #848D9C;
+	z-index: 999;
+}
+
+#image_track
+{
+	left: 430px;
+	background: url("../images/image_track.png") 20px 20px no-repeat transparent;
+}
+
+#image_track.hover
+{
+	background: url("../images/image_track_hover.png") 20px 20px no-repeat #848D9C;
+	z-index: 999;
+}
+
+#image .text
+{
+width: 300px;
+height: 140px;
+position: absolute;
+left: 160px;
+top: 25px;
+color: white;
+padding: 10px 20px;
+border-left: 1px solid #fff;
+font-family: 'Roboto', arial, sans-serif;
+font-size: 11pt;
+}

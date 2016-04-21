@@ -1,0 +1,38 @@
+.required, .message {
+font-size: 12px;
+margin-bottom: 10px;
+color: red;
+font-weight: 400;
+}
+
+#registerContainer {
+width: 470px;
+margin: 0 auto;
+margin-top: 30px;
+float: none;
+overflow: auto;
+}
+
+.rowContainer {
+width: 215px;
+margin-bottom: 10px;
+float: left;
+margin-right: 20px;
+}
+
+.rowContainer input {
+font-size: 16px;
+width: 200px;
+}
+
+.rowContainer select {
+width: 215px;
+font-size: 16px;
+}
+
+#registerContainer .button {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+margin-top: 10px;
+}

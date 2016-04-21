@@ -1,0 +1,247 @@
+.title {
+	font-size: 25px;
+	margin-bottom: 0px;
+}
+
+.info {
+	font-size: 14px;
+	color: #888;
+}
+
+.currentPrice {
+	position: absolute;
+top: 20px;
+right: 20px;
+text-align: center;
+}
+
+.currentPrice p {
+margin: 0;
+padding: 0;
+}
+
+.currentPrice .price {
+margin-top: -8px;
+font-size: 35px;
+}
+
+.card .chart_new {
+	margin-top: 10px;
+	border: 1px solid #ccc;
+}
+
+.card .chart_new .zoomControls {
+	font-size: 0px;
+}
+
+.card .chart_new button {
+	float: left;
+	padding: 3px 5px;
+	margin-right: 3px;
+}
+
+.card .chart_new .legend {
+	font-size: 11px;
+}
+
+.stockFlipperContainer {
+	margin-bottom: 30px;
+	float: left;
+	width: 640px;
+	height: 354px;
+}
+
+.card.cardFront, .card.cardBack {
+position: absolute;
+top: 0;
+left: 0;
+width: 600px;
+height: 314px;
+padding: 20px;
+background: #fff;
+margin: 0;
+}
+
+.card.cardBack {
+color: #fff;
+background: #848D9C;
+text-align: justify;
+}
+
+.card.cardBack .title {
+border-bottom: 1px solid #fff;
+padding-bottom: 10px;
+margin-bottom: 10px;
+}
+
+.card.prediction, .card.share {
+	margin-right: 0px;
+width: 280px;
+padding-bottom: 10px;
+float: right;
+}
+
+.card.share {
+padding: 0;
+width: 320px;
+box-shadow: none;
+background: transparent;
+}
+
+.share .shareLink {
+width: 80px;
+height: 40px;
+float: left;
+background-position: center center;
+background-repeat: no-repeat;
+transition-property: margin-top;
+transition-duration: 0.15s;
+}
+
+.track, .track:active, .track:focus {
+text-decoration: none;
+vertical-align: middle;
+}
+
+.trackLink, .trackLink:active, .trackLink:focus {
+font-size: 12px;
+padding: 0px 5px;
+border: 1px solid #848D9C;
+color: #848D9C;
+background: #EEEEEE;
+}
+
+.trackLink:hover {
+border-color: #000;
+color: #000;
+}
+
+.trackedLink, .trackedLink:active, .trackedLink:focus {
+font-size: 0px;
+padding: 8px;
+background-repeat: no-repeat;
+background-position: center center;
+background-image: url('../images/tracked.png');
+background-color: #19BB6D;
+border: 1px solid #2B9662;
+}
+
+.trackedLink:hover {
+border-color: #19BB6D;
+background-color: #0BDA76;
+}
+
+.share #facebook {
+background-image: url('../images/facebook.png');
+background-color: #425F9C;
+}
+
+.share #twitter {
+background-image: url('../images/twitter.png');
+background-color: #45C5EC;
+}
+
+.share #gplus {
+background-image: url('../images/gplus.png');
+background-color: #DA4835;
+}
+
+.share #linkedin {
+background-image: url('../images/linkedin.png');
+background-color: #006699;
+}
+
+.share .shareLink:hover {
+margin-top: -5px;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+position: relative;
+z-index: 2;
+}
+
+.predictedprice {
+	font-size: 20px;
+	text-align: center;
+}
+
+.tomorrow {
+	text-align: center;
+}
+
+.confidence {
+	color: #888;
+	text-align: center;
+}
+
+.PredictedDecision {
+	text-transform: uppercase;
+font-weight: 400;
+font-size: 30px;
+margin: 0 auto;
+text-align: center;
+color: #fff;
+margin: 10px 0px;
+width: 320px;
+margin-left: -20px;
+}
+
+.buy {
+	background: #19BB6D;
+}
+
+.sell {
+	background: #E62A2A;
+}
+
+.hold {
+	background: #1a3c75;
+}
+
+.waitTime {
+	text-align: center;
+}
+
+.predictdate {
+	color: #888;
+font-size: 12px;
+text-align: center;
+margin-top: 20px;
+}
+
+#topmessage {
+	color: #fff;
+text-align: center;
+margin-bottom: 30px;
+opacity: 0.3;
+}
+
+.paginate {
+font-family: roboto, Arial, sans-serif;
+padding: 3px;
+margin: 3px;
+overflow: auto;
+width: 1000px;
+text-align: center;
+}
+ 
+.paginate a, .paginate span.disabled {
+    padding:2px 5px 2px 5px;
+    margin:2px;
+    text-decoration:none;
+    color: #101C32;
+    background: #fff;
+    font-size: 12px;
+}
+.paginate a:hover, .paginate a:active {
+    background: #ececec;
+}
+
+.paginate span.current {
+    margin: 2px;
+    padding: 2px 5px 2px 5px;         
+    background-color: #E26D26;
+    color: #FFF;
+    }
+    
+.paginate span.disabled {
+    opacity: 0.25;
+}

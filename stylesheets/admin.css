@@ -1,0 +1,220 @@
+#confirmation
+{
+display: none;
+width: 300px;
+height: 300px;
+}
+
+#stocks
+{
+width: 291px;
+}
+
+#stockdata {
+	max-height: 600px;
+	overflow: auto;
+}
+
+#stocks th
+{
+font-family: roboto;
+font-weight: 500;
+font-size: 13px;
+background: #eee;
+padding: 5px 10px;
+text-transform: uppercase;
+text-align: left;
+}
+
+#stocks td
+{
+padding: 5px 10px;
+border-bottom: 1px solid #bbb;
+font-family: roboto;
+font-size: 13px;
+font-weight: 300;
+}
+
+#stocks td:first-child
+{
+font-weight: 500;
+color: #101C32;
+}
+
+#addstock
+{
+width: 330px;
+}
+
+#addstock .loading 
+{
+background-color:rgba(255, 255, 255, 0.7);
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+}
+
+#addstock .loading img
+{
+position: absolute;
+top: 70px;
+left: 120px;
+}
+
+#input_addstock
+{
+resize: none;
+float: left;
+font-size: 13px;
+font-family: roboto;
+font-weight: 300;
+padding: 5px;
+margin-right: 10px;
+}
+
+#addstock .button_addstock 
+{
+float: left;
+padding: 10px 25px;
+font-size: 14px;
+font-weight: 300;
+font-family: roboto;
+}
+
+#message_addstock, #message_timer {
+float: left;
+font-family: roboto;
+font-weight: 300;
+font-size: 13px;
+color: #333;
+width: 100%;
+}
+
+#searchAnalytics, #predictionAnalytics {
+	width: 599px; 
+	margin-right: 0px;
+}
+
+#graph_search {
+	width: 599px;
+	height: 230px;
+}
+
+#filter {
+	margin: 0 auto;
+	font-size: 12px;
+	width: 599px;
+	color: #101C32;
+	font-weight: 400;
+	margin-top: 15px;
+	width: 570px;
+}
+
+#filter .google-visualization-controls-slider-horizontal {
+	width: 430px;
+	border: 1px solid #E26D26;
+}
+
+#filter .google-visualization-controls-slider-handle {
+	background-color: #E26D26;
+}
+
+#filter .google-visualization-controls-slider-thumb {
+	background-color: #E26D26;
+	border: none;
+}
+
+#filter .google-visualization-controls-rangefilter-thumblabel {
+	color: #101C32;
+}
+
+.timercontainer {
+margin: 0 auto;
+width: 170px;
+margin-bottom: 10px;
+overflow: auto;
+}
+
+#timers {
+width: 199px;
+margin-right: 0px;
+}
+
+.timerTitle {
+	float: left;
+font-size: 12px;
+width: 100%;
+border-bottom: 1px solid #ccc;
+padding-bottom: 3px;
+margin-bottom: 5px;
+}
+
+.timerText {
+	float: left;
+margin-right: 10px;
+clear: both;
+}
+
+.timerSelect {
+width: 80px;
+font-size: 12px;
+}
+
+.timerInput {
+	padding: 0px 3px;
+width: 18px;
+font-family: roboto;
+font-size: 15px;
+font-weight: 300;
+float: left;
+margin-right: 10px;
+text-align: center;
+}
+
+input.ampm {
+	width: 41px;
+}
+
+.day {
+	margin-top: 5px;
+	float: left;
+	display: none;
+}
+
+.day #at {
+	clear: both;
+}
+
+#button_timers {
+	padding: 5px 25px;
+font-family: roboto;
+font-weight: 300;
+font-size: 13px;
+margin: 0 auto;
+width: 100%;
+margin-top: 10px;
+}
+
+#searchAnalytics {
+	float: right;
+}
+
+#graph_prediction .zoomControls {
+	font-size: 0px;
+}
+
+#graph_prediction button {
+	float: left;
+	padding: 3px 5px;
+	margin-right: 3px;
+}
+
+#graph_prediction .legend {
+	font-size: 11px;
+}
+
+#graph_prediction.container {
+	border: 1px solid #ccc;
+}
