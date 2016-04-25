@@ -4,7 +4,7 @@ $('#link_login').click(function() {
 			$('#login').dialog({
 			dialogClass : 'login alert',
 			title : 'Login',
-			width: 200,
+			width: 230,
 			show : {
 				effect : "shake",
 				distance : 5,

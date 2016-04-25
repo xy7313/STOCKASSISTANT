@@ -24,6 +24,7 @@
 				include_once('classes/controller.php');
 				$controller = new controller;
 				echo $controller->createPage();
+				
 				?>
 		</div>
 			<?php include_once('footer.php'); ?>

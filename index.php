@@ -10,7 +10,7 @@
 		<title>StockAssistant</title>
 <!--		css-->
 <!--		<link rel="stylesheet" href="stylesheets/splashscreen.css" type="text/css" />-->
-		<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+<!--		<link rel="stylesheet" href="stylesheets/bootstrap.min.css">-->
 
 		<?php include_once 'head.php' ?>
 		<script src="js/splashscreen.js"></script>
@@ -31,7 +31,7 @@
 				 	echo "</ul>";
 				 }
 				?>
-				<div id="login">
+				<div id="login" >
 						<div id="message_login"></div>
 						<label for="email">Email</label>
 						<input type="text" id="email" class="input_login"></input>

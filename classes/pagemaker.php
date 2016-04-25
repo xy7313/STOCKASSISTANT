@@ -73,6 +73,15 @@ class pageMaker {
 			$html .= $Predictionresult['AvgPrice'];
 			$html .= "</div><div class='tomorrow'>Predicted Next Day's Closing: ";
 			$html .= $Predictionresult['NextDayPrice'];
+
+			//add two more query:
+			//2) Get the highest stock price of Google in the last ten days
+			//3) Average stock price of Microsoft in the latest one year
+			$html .= "</div><div class='tomorrow'>Predicted Next Day's Closing: ";
+			$html .= $Predictionresult['NextDayPrice'];
+			$html .= "</div><div class='tomorrow'>Predicted Next Day's Closing: ";
+			$html .= $Predictionresult['NextDayPrice'];
+
 			$html .= "</div><div class='confidence'>Confidence: ";
 			$html .= $Predictionresult['ConfidenceValue'];
 			$html .= "%</div><div class='PredictedDecision ".$Predictionresult['PredictedDecision']."'>";
