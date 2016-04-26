@@ -101,8 +101,7 @@
 		
 		//get prediction data
 		public function get_predictionData() {
-			return "SELECT Date, NextDayPrice, AvgPrice, ConfidenceValue, PredictedDecision, WaitTime FROM Predictions WHERE StockID = ? ORDER BY Date desc LIMIT 1";
-		}
+			return "SELECT Date, NextDayPrice, AvgPrice, ConfidenceValue, PredictedDecision, WaitTime, BYSnext, BYSconfidence, EMA, RSI, HighTenDay, AvgYear, SVMnext FROM Predictions WHERE StockID = ? ORDER BY Date desc LIMIT 1";		}
 		
 		//get prediction session timings
 		public function get_predictionTimes() {

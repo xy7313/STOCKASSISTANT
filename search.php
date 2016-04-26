@@ -11,7 +11,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Stock Hawk: Search</title>
+		<title>StockAssistant Search</title>
 		<link rel="stylesheet" href="stylesheets/search.css" type="text/css" />
 		<?php include_once 'head.php' ?> 
 		<script type="text/javascript" src='https://www.google.com/jsapi?autoload={"modules":[{"name":"visualization","version":"1","packages":["annotationchart"]}]}'></script>

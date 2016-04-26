@@ -69,22 +69,44 @@ class pageMaker {
 			$this -> dbConnection -> bind(1, $stockID);
 			$Predictionresult = $this -> dbConnection -> single();
 			
-			$html .= "<div class='card prediction animatedBounceInRight'><div class='predictedprice'>Predicted Five Day Avg: ";
-			$html .= $Predictionresult['AvgPrice'];
-			$html .= "</div><div class='tomorrow'>Predicted Next Day's Closing: ";
-			$html .= $Predictionresult['NextDayPrice'];
+			$html .= "<div class='card prediction animatedBounceInRight'><div class='predictedprice'>Predictions ";
 
+			$html .= "</div><div class='tomorrow'>Next five days avg:(ANN): ";
+			$html .= $Predictionresult['AvgPrice'];
+			$html .= "</div><div class='tomorrow'>Next Day's Closing(ANN): ";
+			$html .= $Predictionresult['NextDayPrice'];
 			//add two more query:
 			//2) Get the highest stock price of Google in the last ten days
 			//3) Average stock price of Microsoft in the latest one year
-			$html .= "</div><div class='tomorrow'>Predicted Next Day's Closing: ";
-			$html .= $Predictionresult['NextDayPrice'];
-			$html .= "</div><div class='tomorrow'>Predicted Next Day's Closing: ";
-			$html .= $Predictionresult['NextDayPrice'];
+			//HighTenDay
+			//AvgYear
+			//BYSnext 贝叶斯next day
+			//BYSconfidence
+			//SVMnext SVM next day
+			//EMA,
+			//RSI:
 
-			$html .= "</div><div class='confidence'>Confidence: ";
-			$html .= $Predictionresult['ConfidenceValue'];
-			$html .= "%</div><div class='PredictedDecision ".$Predictionresult['PredictedDecision']."'>";
+			$html .= "</div><div class='SVMnext'>Next Day's Closing(SVM): ";
+			$html .= number_format($Predictionresult['SVMnext'], 2);
+			$html .= "</div><div class='BYSnext'>Next Day's Closing(Bayes): ";
+			$html .= number_format($Predictionresult['BYSnext'],2);
+			$html .= "</div><div class='confidence'>likelihood(Bayes) :";
+			$html .= number_format($Predictionresult['BYSconfidence'],2);
+
+			$html .= "</div><div class='EMA'>EMA: ";
+			$html .= number_format($Predictionresult['EMA'],2);
+			$html .= "</div><div class='RSI'>RSI: ";
+			$html .= number_format($Predictionresult['RSI'],2);
+			$html .= "</div><div class='HighTenDay'>Highest price of last ten days: ";
+			$html .= $Predictionresult['HighTenDay'];
+			$html .= "</div><div class='AvgYear'>Average of the lastest year: ";
+			$html .= number_format($Predictionresult['AvgYear'],2);
+			//--
+			
+			
+//			$html .= "</div><div class='confidence'>Confidence: ";
+//			$html .= $Predictionresult['ConfidenceValue'];
+			$html .= "</div><div class='PredictedDecision ".$Predictionresult['PredictedDecision']."'>";
 			$html .= $Predictionresult['PredictedDecision'];
 			$html .= "</div><div class='waitTime'>in ";
 			$html .= $Predictionresult['WaitTime'];
@@ -94,20 +116,7 @@ class pageMaker {
 			
 			$url = str_replace(' ', '%20', $result['Company']);
 			
-			$html .= "<div class='card share animatedBounceInRight'>";
-			$html .= "<a href='https://www.facebook.com/sharer/sharer.php?u=http://localhost:8888/1_code/search.php?q=";
-			$html .= $url;
-			$html .= "' target='_blank'><div class='shareLink' id='facebook'></div></a>";
-			$html .= "<a href='https://twitter.com/home?status=Check%20this%20awesome%20stock%20out!%20http://localhost:8888/1_code/search.php?q=";
-			$html .= $url;
-			$html .= "' target='_blank'><div class='shareLink' id='twitter'></div></a>";
-			$html .= "<a href='https://plus.google.com/share?url=http://localhost:8888/1_code/search.php?q=";
-			$html .= $url;
-			$html .= "' target='_blank'><div class='shareLink' id='gplus'></div></a>";
-			$html .= "<a href='https://www.linkedin.com/shareArticle?mini=true&title=Stock%20Prediction&url=http://localhost:8888/1_code/search.php?q=";
-			$html .= $url;
-			$html .= "' target='_blank'><div class='shareLink' id='linkedin'></div></a>";
-			$html .= "</div>";
+
 		}
 		$this -> dbConnection -> disconnect(); //disconnect from database;
 		return $html; //return html
